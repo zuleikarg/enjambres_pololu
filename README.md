@@ -17,7 +17,7 @@ Repositorio de la práctica 1 de la asginatura de Sistemas Multirobot
 5. Movimiento de flocking →      flocking.wbt
 6. Movimiento de foraging →      foraging.wbt
 
-Vídeo resumen de las tareas
+[Vídeo resumen de las tareas]
 
 
 [Zuleika María Redondo García]: https://github.com/zuleikarg
