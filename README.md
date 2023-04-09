@@ -1,7 +1,7 @@
 Projecto desarrollado por: [Zuleika María Redondo García]
 # Sistema de Enjambres de 5 *Zumo Pololu* en Webots
 
-Repositorio de la práctica 1 de la asginatura de Sistemas Multirobot
+Repositorio de la práctica de robótica de enjambre de la asginatura de Sistemas Multirobot
 
 ## Requisitos
 - Aplicación de Webots.
