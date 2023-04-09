@@ -1,0 +1,187 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "../protos/Pololu_new.proto"
+
+WorldInfo {
+  basicTimeStep 5
+}
+Viewpoint {
+  orientation -0.6536166163337515 -0.09184335187766346 0.7512323991737134 3.351937809998855
+  position 0.6733736902478279 0.24365212334995476 5.790573506381029
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+  luminosity 0.8
+}
+RectangleArena {
+  floorSize 2 3
+  floorAppearance Appearance {
+    material Material {
+      diffuseColor 1 1 1
+      shininess 0.1
+    }
+    texture ImageTexture {
+      url [
+        "../libraries/foraging_map.png"
+      ]
+      repeatT FALSE
+    }
+    textureTransform TextureTransform {
+      rotation 1.572
+      scale 0.17 0.3
+    }
+  }
+}
+DEF Pololu Pololu_new {
+  hidden position_0_0 25.844989512257488
+  hidden position_0_1 25.844989615795736
+  hidden position_0_2 27.374984541141476
+  hidden position_0_3 27.37498455163695
+  hidden rotation_20 0.8851249349632171 0.32885649568101105 -0.32925256985294055 1.693715764926008
+  hidden rotation_21 0.8851249045944936 0.32885653650087965 -0.3292526107219724 1.6937157989772336
+  hidden rotation_22 0.3231690745528496 0.668761461894995 -0.6695669169968927 2.5171467235665164
+  hidden rotation_23 0.3231690706730129 0.6687614628313034 -0.6695669179343289 2.517146730585561
+  translation 0.12185 -0.0432758 0.0180872
+  rotation -0.0002797079431341062 -0.0005730378834987986 0.9999997966955048 -3.0833053071795864
+  name "pololu1"
+  controller "foraging_controller"
+}
+DEF Pololu Pololu_new {
+  hidden position_0_0 31.904993353182796
+  hidden position_0_1 31.904993464645585
+  hidden position_0_2 31.90499331758427
+  hidden position_0_3 31.9049933315562
+  hidden rotation_20 -0.9430699074896993 -0.23503829508528187 0.2353213747851518 4.6526060833456
+  hidden rotation_21 -0.9430698827397686 -0.2350383446789393 0.2353214244385396 4.65260605714848
+  hidden rotation_22 -0.9430699153649107 -0.23503827930501198 0.2353213589858761 4.652606091681295
+  hidden rotation_23 -0.9430699122644387 -0.23503828551770684 0.23532136520605373 4.652606088399531
+  translation 0.202397 -0.571156 0.0179906
+  rotation 1.2301511978368065e-05 -0.0006947779265321198 0.9999997585661238 3.14156902906586
+  name "pololu2"
+  controller "foraging_controller"
+}
+DEF Pololu Pololu_new {
+  hidden position_0_0 31.904993402788566
+  hidden position_0_1 31.90499344127001
+  hidden position_0_2 31.904993344849075
+  hidden position_0_3 31.90499331134899
+  hidden rotation_20 -0.943069907489508 -0.2350382950856652 0.23532137478553564 4.652606083345398
+  hidden rotation_21 -0.9430698827394195 -0.23503834467963883 0.2353214244392399 4.652606057148111
+  hidden rotation_22 -0.9430699153652434 -0.23503827930434482 0.23532135898520826 4.652606091681648
+  hidden rotation_23 -0.9430699122646093 -0.23503828551736464 0.23532136520571115 4.652606088399712
+  translation -0.168578 0.472047 0.0179906
+  rotation 1.2294629119477357e-05 -0.0006947780469871643 0.9999997585661246 3.1415492159632046
+  name "pololu3"
+  controller "foraging_controller"
+}
+DEF Pololu Pololu_new {
+  hidden position_0_0 31.904993353182643
+  hidden position_0_1 31.90499346464539
+  hidden position_0_2 31.90499331758448
+  hidden position_0_3 31.904993331556362
+  hidden rotation_20 -0.9430699074897325 -0.23503829508521557 0.2353213747850853 4.652606083345636
+  hidden rotation_21 -0.9430698827398127 -0.2350383446788508 0.23532142443845092 4.652606057148527
+  hidden rotation_22 -0.9430699153648673 -0.23503827930509888 0.23532135898596318 4.652606091681249
+  hidden rotation_23 -0.9430699122644046 -0.23503828551777473 0.23532136520612176 4.652606088399495
+  translation -0.197613 -1.09114 0.0179895
+  rotation 1.230498579023792e-05 -0.0006947778657393576 0.9999997585661232 3.141579028833872
+  name "pololu4"
+  controller "foraging_controller"
+}
+DEF Pololu Pololu_new {
+  hidden position_0_0 31.904993353182796
+  hidden position_0_1 31.904993464645585
+  hidden position_0_2 31.904993317584278
+  hidden position_0_3 31.90499333155619
+  hidden rotation_20 -0.943069907489699 -0.23503829508528268 0.23532137478515258 4.652606083345599
+  hidden rotation_21 -0.9430698827397673 -0.23503834467894164 0.2353214244385419 4.652606057148479
+  hidden rotation_22 -0.943069915364911 -0.2350382793050112 0.23532135898587545 4.652606091681296
+  hidden rotation_23 -0.9430699122644398 -0.23503828551770437 0.23532136520605143 4.652606088399533
+  translation 0.412443 1.07885 0.0179868
+  rotation 1.230151197838391e-05 -0.0006947779265321153 0.9999997585661238 3.141569029065856
+  name "pololu5"
+  controller "foraging_controller"
+}
+Solid {
+  translation -0.279999973535514 -0.1399999969568948 0.049693437500000014
+  rotation -3.7057830568349746e-12 -4.613849287282206e-12 1 1.246034488700738e-07
+  children [
+    DEF Box1 Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.9 0.9 0.9
+        }
+      }
+      geometry Box {
+        size 0.1 0.5 0.1
+      }
+    }
+  ]
+  boundingObject USE Box1
+  physics Physics {
+  }
+}
+Solid {
+  translation -0.3199999876934624 1.250000000225812 0.04969343883690413
+  rotation 0.04897458675596297 -0.2978563611534917 0.9533535954578884 1.764886116264758e-07
+  children [
+    DEF Box1 Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.9 0.9 0.9
+        }
+      }
+      geometry Box {
+        size 0.1 0.5 0.1
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject USE Box1
+  physics Physics {
+  }
+}
+Solid {
+  translation -0.4999999969568952 -0.8899999735355144 0.049693437500000014
+  rotation 1.5550032061964846e-11 -2.0697087342759656e-12 -1 1.246034488706872e-07
+  children [
+    DEF Box1 Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.9 0.9 0.9
+        }
+      }
+      geometry Box {
+        size 0.5 0.1 0.1
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject USE Box1
+  physics Physics {
+  }
+}
+Solid {
+  translation 0.4400000030431052 0.470000026464486 0.049693437500000014
+  rotation 4.236740408304791e-12 -5.303033761313412e-13 -1 1.246034488700699e-07
+  children [
+    DEF Box1 Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.9 0.9 0.9
+        }
+      }
+      geometry Box {
+        size 0.5 0.1 0.1
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject USE Box1
+  physics Physics {
+  }
+}

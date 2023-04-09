@@ -1,0 +1,208 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+IMPORTABLE EXTERNPROTO "../protos/Pololu.proto"
+EXTERNPROTO "../protos/Pololu_new.proto"
+
+WorldInfo {
+  ERP 0.6
+  basicTimeStep 8
+}
+Viewpoint {
+  orientation -0.3574784476023062 -0.12358276561026642 0.9257086256182141 3.761049742050943
+  position 2.2429897233838596 2.0376377026309385 2.3350878563467075
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+  castShadows FALSE
+}
+RectangleArena {
+  translation -0.0103801 0.0164444 0
+  rotation 0 1 0 0
+  floorSize 2 3
+}
+DEF Pololu Pololu_new {
+  translation -0.158957 -0.0211254 0.02
+  controller "obstacles"
+}
+DEF Pololu Pololu_new {
+  translation -0.458963 -0.771125 0.0299784
+  rotation -3.580149995449062e-05 3.550449995486815e-05 0.9999999987288415 -1.570825307179586
+  name "pololu2"
+  controller "obstacles"
+}
+DEF Pololu Pololu_new {
+  translation 0.711042 0.168851 0.0300621
+  rotation -3.5653499977338745e-05 -1.485379999055897e-07 0.9999999993644031 3.14156
+  name "pololu3"
+  controller "obstacles"
+}
+DEF Pololu Pololu_new {
+  translation 0.161043 1.20887 0.0300232
+  name "pololu4"
+  controller "obstacles"
+}
+DEF Pololu Pololu_new {
+  translation -0.528958 0.368875 0.0299737
+  rotation -3.580149995449062e-05 3.550449995486815e-05 0.9999999987288415 -1.570825307179586
+  name "pololu5"
+  controller "obstacles"
+}
+Solid {
+  translation -0.1 0.58 0.0498459
+  rotation -0.004656369843305613 -0.039185219926487824 0.9992211150487139 8.222675915761232e-16
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.05
+      }
+    }
+  ]
+  name "cilindro"
+  boundingObject Shape {
+    geometry Cylinder {
+      height 0.1
+      radius 0.05
+    }
+  }
+  physics Physics {
+  }
+}
+Solid {
+  translation 0.53 -0.9 0.0498459
+  rotation -0.004656369843305613 -0.039185219926487824 0.9992211150487139 8.222675915761232e-16
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.05
+      }
+    }
+  ]
+  name "cilindro(1)"
+  boundingObject Shape {
+    geometry Cylinder {
+      height 0.1
+      radius 0.05
+    }
+  }
+  physics Physics {
+  }
+}
+Solid {
+  translation 0.382591 0.14 0.0498038
+  rotation 2.0059608427488604e-11 1.3160512560197836e-11 -0.9999999999999999 7.083938619008259e-07
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+      }
+      geometry Box {
+        size 0.1 1 0.1
+      }
+    }
+  ]
+  name "cubo"
+  boundingObject Box {
+    size 0.1 1 0.1
+  }
+  physics Physics {
+  }
+}
+Solid {
+  translation -0.047409 -0.9 0.0498038
+  rotation 2.0059608427488604e-11 1.3160512560197836e-11 -0.9999999999999999 7.083938619008259e-07
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+      }
+      geometry Box {
+        size 0.1 0.5 0.1
+      }
+    }
+  ]
+  name "cubo(3)"
+  boundingObject Box {
+    size 0.1 0.5 0.1
+  }
+  physics Physics {
+  }
+}
+Solid {
+  translation 0.742591 1.18 0.0498038
+  rotation 2.0059608427488604e-11 1.3160512560197836e-11 -0.9999999999999999 7.083938619008259e-07
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+      }
+      geometry Box {
+        size 0.1 0.5 0.1
+      }
+    }
+  ]
+  name "cubo(4)"
+  boundingObject Box {
+    size 0.1 0.5 0.1
+  }
+  physics Physics {
+  }
+}
+Solid {
+  translation -0.747409 0.82 0.0498038
+  rotation 2.0059608427488604e-11 1.3160512560197836e-11 -0.9999999999999999 7.083938619008259e-07
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+      }
+      geometry Box {
+        size 0.5 0.1 0.1
+      }
+    }
+  ]
+  name "cubo(1)"
+  boundingObject Box {
+    size 0.5 0.1 0.1
+  }
+  physics Physics {
+  }
+}
+Solid {
+  translation -0.497409 -0.14 0.0498038
+  rotation 2.0059608427488604e-11 1.3160512560197836e-11 -0.9999999999999999 7.083938619008259e-07
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+      }
+      geometry Box {
+        size 0.5 0.1 0.1
+      }
+    }
+  ]
+  name "cubo(2)"
+  boundingObject Box {
+    size 0.5 0.1 0.1
+  }
+  physics Physics {
+  }
+}

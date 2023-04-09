@@ -1,0 +1,63 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "../protos/Pololu_new.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5695394424177885 0.0033874205795646735 0.8219570237623447 3.1750902457213255
+  position 1.7044098411930972 0.06482140709961924 4.379039660707838
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 6 6
+}
+DEF Pololu Pololu_new {
+  hidden position_0_0 15.839993346282954
+  hidden position_0_1 15.839993467644133
+  hidden position_0_2 15.839993312765923
+  hidden position_0_3 15.839993334341383
+  hidden rotation_20 -0.04672464789312126 0.7059092584088834 -0.7067594542500892 3.2348618622016474
+  hidden rotation_21 -0.04672469087310607 0.7059092569881562 -0.7067594528276518 3.234861947871627
+  hidden rotation_22 -0.04672463602308589 0.7059092588012534 -0.7067594546429324 3.2348618385416645
+  hidden rotation_23 -0.04672464366402112 0.705909258548679 -0.7067594543900525 3.234861853771981
+  translation 0.07104344970825265 -0.021108106211552603 0.01795710307868001
+  rotation -0.9927608558562184 -0.1182774150194623 -0.020888661420552086 0.001331240590991146
+  name "pololu1"
+  controller "follower_controller"
+}
+DEF Pololu Pololu_new {
+  hidden position_0_0 15.839993346282954
+  hidden position_0_1 15.839993467644135
+  hidden position_0_2 15.839993312765923
+  hidden position_0_3 15.839993334341383
+  hidden rotation_20 -0.04672464789312126 0.7059092584088834 -0.7067594542500892 3.2348618622016474
+  hidden rotation_21 -0.04672469087310665 0.7059092569881564 -0.7067594528276516 3.2348619478716283
+  hidden rotation_22 -0.04672463602308589 0.7059092588012534 -0.7067594546429324 3.2348618385416645
+  hidden rotation_23 -0.04672464366402112 0.705909258548679 -0.7067594543900525 3.234861853771981
+  translation -0.15895655029104788 -0.02110160621155508 0.017957096476891463
+  rotation -0.9927608592830938 -0.11827738624658317 -0.020888661473872302 0.0013312405862566908
+  name "pololu2"
+  controller "follower_controller"
+}
+DEF Pololu Pololu_new {
+  translation -0.398955 -0.0211182 0.0149832
+  name "pololu3"
+  controller "follower_controller"
+}
+DEF Pololu Pololu_new {
+  translation -0.628955 -0.0211114 0.0149671
+  name "pololu4"
+  controller "follower_controller"
+}
+DEF Pololu Pololu_new {
+  translation -0.858955 -0.0211056 0.0149503
+  name "pololu5"
+  controller "follower_controller"
+}

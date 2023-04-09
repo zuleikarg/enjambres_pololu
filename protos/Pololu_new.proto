@@ -1,0 +1,463 @@
+#VRML_SIM R2023a utf8
+
+PROTO Pololu_new [
+  field SFVec3f    translation   -0.158955 -0.0211254 0.015
+  field SFRotation rotation      0.0038820251337088724 -0.9318025326601058 -0.36294485808325433 7.652587054363859e-05
+  field SFString name "pololu"
+  field SFString controller "none"
+]
+{
+  DEF Pololu Robot {
+    translation IS translation
+    rotation IS rotation
+    children [
+      InertialUnit {
+        translation 0.02 -0.02 0.013
+        children [
+          Solid {
+            children [
+              DEF IMU Shape {
+                appearance Appearance {
+                  material Material {
+                    diffuseColor 0.1 0.1 0.1
+                  }
+                }
+                geometry Box {
+                  size 0.01 0.01 0.001
+                }
+              }
+            ]
+            boundingObject USE IMU
+            physics Physics {
+            }
+          }
+        ]
+        name "IMU"
+        boundingObject USE IMU
+        physics Physics {
+        }
+      }
+      DistanceSensor {
+        translation 0.052 0.008 -0.01006
+        rotation 0 1 0 1.572
+        children [
+          Solid {
+            children [
+              DEF LFL Shape {
+                appearance Appearance {
+                  material Material {
+                    diffuseColor 0.1 0.1 0.1
+                  }
+                }
+                geometry Box {
+                  size 0.001 0.002 0.002
+                }
+              }
+            ]
+            boundingObject USE LFL
+            physics Physics {
+            }
+          }
+        ]
+        name "front_left_line"
+        boundingObject USE LFL
+        physics Physics {
+        }
+        type "infra-red"
+      }
+      DistanceSensor {
+        translation 0.052 -0.008 -0.01006
+        rotation 0 1 0 1.572
+        children [
+          Solid {
+            children [
+              DEF LFR Shape {
+                appearance Appearance {
+                  material Material {
+                    diffuseColor 0.1 0.1 0.1
+                  }
+                }
+                geometry Box {
+                  size 0.001 0.002 0.002
+                }
+              }
+            ]
+            boundingObject USE LFR
+            physics Physics {
+            }
+          }
+        ]
+        name "front_right_line"
+        boundingObject USE LFR
+        physics Physics {
+        }
+        type "infra-red"
+      }
+      DistanceSensor {
+        translation 0.052 0.04 -0.01006
+        rotation 0 1 0 1.572
+        children [
+          Solid {
+            children [
+              DEF LL Shape {
+                appearance Appearance {
+                  material Material {
+                    diffuseColor 0.1 0.1 0.1
+                  }
+                }
+                geometry Box {
+                  size 0.001 0.002 0.002
+                }
+              }
+            ]
+            boundingObject USE LL
+            physics Physics {
+            }
+          }
+        ]
+        name "left_line"
+        boundingObject USE LL
+        physics Physics {
+        }
+        type "infra-red"
+      }
+      DistanceSensor {
+        translation 0.052 -0.04 -0.01006
+        rotation 0 1 0 1.572
+        children [
+          Solid {
+            children [
+              DEF LR Shape {
+                appearance Appearance {
+                  material Material {
+                    diffuseColor 0.1 0.1 0.1
+                  }
+                }
+                geometry Box {
+                  size 0.001 0.002 0.002
+                }
+              }
+            ]
+            boundingObject USE LR
+            physics Physics {
+            }
+          }
+        ]
+        name "right_line"
+        boundingObject USE LR
+        physics Physics {
+        }
+        type "infra-red"
+      }
+      DistanceSensor {
+        translation 0.052 0 -0.01006
+        rotation 0 1 0 1.572
+        children [
+          Solid {
+            children [
+              DEF LF Shape {
+                appearance Appearance {
+                  material Material {
+                    diffuseColor 0.1 0.1 0.1
+                  }
+                }
+                geometry Box {
+                  size 0.001 0.002 0.002
+                }
+              }
+            ]
+            boundingObject USE LF
+            physics Physics {
+            }
+          }
+        ]
+        name "front_line"
+        boundingObject USE LF
+        physics Physics {
+        }
+        type "infra-red"
+      }
+      DistanceSensor {
+        translation 0.052 -0.043 -0.01
+        rotation 0 0 1 -1.572
+        children [
+          Solid {
+            rotation 1 0 0 1.572
+            children [
+              DEF D2 Shape {
+                appearance Appearance {
+                  material Material {
+                    diffuseColor 0.1 0.1 0.1
+                  }
+                }
+                geometry Capsule {
+                  height 0.002
+                  radius 0.001
+                }
+              }
+            ]
+            boundingObject USE D2
+            physics Physics {
+            }
+          }
+        ]
+        name "right_distance"
+        boundingObject USE D2
+        physics Physics {
+        }
+        lookupTable [
+          0.04 0 0
+          0.3 1000 0
+        ]
+      }
+      DistanceSensor {
+        translation 0.051904 0.043 -0.01
+        rotation 0 0 1 1.572
+        children [
+          Solid {
+            rotation 1 0 0 1.572
+            children [
+              DEF D3 Shape {
+                appearance Appearance {
+                  material Material {
+                    diffuseColor 0.1 0.1 0.1
+                  }
+                }
+                geometry Capsule {
+                  height 0.002
+                  radius 0.001
+                }
+              }
+            ]
+            boundingObject USE D3
+            physics Physics {
+            }
+          }
+        ]
+        name "left_distance"
+        boundingObject USE D3
+        physics Physics {
+        }
+        lookupTable [
+          0.04 0 0
+          0.3 1000 0
+        ]
+      }
+      DistanceSensor {
+        translation 0.058 0 -0.01
+        children [
+          Solid {
+            rotation 1 0 0 1.572
+            children [
+              DEF D1 Shape {
+                appearance Appearance {
+                  material Material {
+                    diffuseColor 0.1 0.1 0.1
+                  }
+                }
+                geometry Capsule {
+                  height 0.002
+                  radius 0.001
+                }
+              }
+            ]
+            boundingObject USE D1
+            physics Physics {
+            }
+          }
+        ]
+        name "front_distance"
+        boundingObject USE D1
+        physics Physics {
+        }
+        lookupTable [
+          0.04 0 0
+          0.3 1000 0
+        ]
+      }
+      DEF Ramp Transform {
+        translation 0.055 0 0.002
+        rotation 0 1 0 -0.2618
+        children [
+          Solid {
+            rotation 0 1 0 0
+            children [
+              DEF Ramp_model Shape {
+                appearance Appearance {
+                  material Material {
+                    diffuseColor 0.1 0.1 0.1
+                  }
+                }
+                geometry Box {
+                  size 0.001 0.1 0.04
+                }
+              }
+            ]
+            boundingObject USE Ramp_model
+            physics Physics {
+            }
+          }
+        ]
+      }
+      DEF DD HingeJoint {
+        jointParameters HingeJointParameters {
+          position 15.839993343406215
+          axis 0 1 0
+          anchor 0.03 -0.043 -6.01836e-05
+        }
+        device [
+          PositionSensor {
+            name "encoder3"
+          }
+          RotationalMotor {
+            name "motor3"
+          }
+        ]
+        endPoint Solid {
+          translation 0.03 -0.043 -6.01836e-05
+          rotation -0.04672464687432604 0.7059092584425598 -0.7067594542838073 3.234861860170931
+          children [
+            DEF M1 Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.1 0.1 0.1
+                }
+              }
+              geometry Cylinder {
+                height 0.015
+                radius 0.018
+              }
+            }
+          ]
+          name "motor3"
+          boundingObject USE M1
+          physics Physics {
+          }
+        }
+      }
+      DEF DA HingeJoint {
+        jointParameters HingeJointParameters {
+          position 15.83999346476667
+          axis 0 1 0
+          anchor -0.02 -0.043 -6.01836e-05
+        }
+        device [
+          PositionSensor {
+            name "encoder4"
+          }
+          RotationalMotor {
+            name "motor4"
+          }
+        ]
+        endPoint Solid {
+          translation -0.02 -0.043 -6.01836e-05
+          rotation -0.04672468985405415 0.7059092570218418 -0.7067594528613774 3.234861945840399
+          children [
+            DEF M2 Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.1 0.1 0.1
+                }
+              }
+              geometry Cylinder {
+                height 0.015
+                radius 0.018
+              }
+            }
+          ]
+          name "motor2"
+          boundingObject USE M2
+          physics Physics {
+          }
+        }
+      }
+      DEF ID HingeJoint {
+        jointParameters HingeJointParameters {
+          position 15.839993315540777
+          axis 0 1 0
+          anchor 0.03 0.043 6.01835e-05
+        }
+        device [
+          PositionSensor {
+            name "encoder1"
+          }
+          RotationalMotor {
+            name "motor1"
+          }
+        ]
+        endPoint Solid {
+          translation 0.03 0.043 6.01835e-05
+          rotation -0.046724637005798694 0.7059092587687692 -0.7067594546104091 3.23486184050046
+          children [
+            DEF M3 Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.1 0.1 0.1
+                }
+              }
+              geometry Cylinder {
+                height 0.015
+                radius 0.018
+              }
+            }
+          ]
+          name "motor1"
+          boundingObject USE M3
+          physics Physics {
+          }
+        }
+      }
+      DEF IA HingeJoint {
+        jointParameters HingeJointParameters {
+          position 15.839993337115272
+          axis 0 1 0
+          anchor -0.02 0.043 6.01835e-05
+        }
+        device [
+          PositionSensor {
+            name "encoder2"
+          }
+          RotationalMotor {
+            name "motor2"
+          }
+        ]
+        endPoint Solid {
+          translation -0.02 0.043 6.01835e-05
+          rotation -0.04672464464639239 0.7059092585162055 -0.7067594543575412 3.234861855730095
+          children [
+            DEF M4 Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.1 0.1 0.1
+                }
+              }
+              geometry Cylinder {
+                height 0.015
+                radius 0.018
+              }
+            }
+          ]
+          name "motor1(3)"
+          boundingObject USE M4
+          physics Physics {
+          }
+        }
+      }
+      DEF Body Shape {
+        appearance Appearance {
+          material Material {
+            diffuseColor 0.1 0 0.1
+          }
+        }
+        geometry Box {
+          size 0.08 0.07 0.025
+        }
+      }
+    ]
+    name IS name
+    boundingObject USE Body
+    physics Physics {
+    }
+    controller IS controller
+  }
+}

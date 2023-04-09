@@ -1,0 +1,560 @@
+#VRML_SIM R2023a utf8
+
+PROTO Pololu [
+  field SFVec3f    translation   -0.158955 -0.0211254 0.00
+  field SFRotation rotation      0.0038820251337088724 -0.9318025326601058 -0.36294485808325433 7.652587054363859e-05
+  field SFString name "pololu"
+]
+{
+  Robot {
+    translation IS translation
+    rotation IS rotation
+    children [
+      Accelerometer {
+        translation 0.009 0.019 0.0302
+        children [
+          Solid {
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColor 0 0 0
+                }
+                geometry Box {
+                  size 0.002 0.002 0.0005
+                }
+              }
+            ]
+            boundingObject Box {
+              size 0.002 0.002 0.0005
+            }
+            physics Physics {
+              mass 1e-08
+            }
+          }
+        ]
+        boundingObject Box {
+          size 0.002 0.002 0.0005
+        }
+        physics Physics {
+          mass 1e-08
+        }
+      }
+      Gyro {
+        translation 0.006 0.016 0.0302
+        children [
+          Solid {
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColor 0 0 0
+                }
+                geometry Box {
+                  size 0.002 0.002 0.0005
+                }
+              }
+            ]
+            boundingObject Box {
+              size 0.002 0.002 0.0005
+            }
+            physics Physics {
+              mass 1e-08
+            }
+          }
+        ]
+        boundingObject Box {
+          size 0.002 0.002 0.0005
+        }
+        physics Physics {
+          mass 1e-08
+        }
+      }
+      Compass {
+        translation 0.009 0.016 0.0302
+        children [
+          Solid {
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColor 0 0 0
+                }
+                geometry Box {
+                  size 0.002 0.002 0.0005
+                }
+              }
+            ]
+            boundingObject Box {
+              size 0.002 0.002 0.0005
+            }
+            physics Physics {
+              mass 1e-08
+            }
+          }
+        ]
+        boundingObject Box {
+          size 0.002 0.002 0.0005
+        }
+        physics Physics {
+          mass 1e-08
+        }
+      }
+      DistanceSensor {
+        translation 0.05 0.03 0.005
+        rotation 0 1 0 1.57
+        children [
+          Solid {
+            rotation 0 1 0 -1.57
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColor 0 0 0
+                }
+                geometry Box {
+                  size 0.002 0.002 0.0005
+                }
+              }
+            ]
+            boundingObject Box {
+              size 0.002 0.002 0.0005
+            }
+            physics Physics {
+              mass 1e-08
+            }
+          }
+        ]
+        name "front_line"
+        boundingObject Box {
+          size 0.0005 0.002 0.002
+        }
+        physics Physics {
+          mass 1e-08
+        }
+        type "infra-red"
+      }
+      DistanceSensor {
+        translation 0.05 -0.012 0.005
+        rotation 0 1 0 1.57
+        children [
+          Solid {
+            rotation 0 1 0 -1.57
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColor 0 0 0
+                }
+                geometry Box {
+                  size 0.002 0.002 0.0005
+                }
+              }
+            ]
+            boundingObject Box {
+              size 0.002 0.002 0.0005
+            }
+            physics Physics {
+              mass 1e-08
+            }
+          }
+        ]
+        name "right_line"
+        boundingObject Box {
+          size 0.0005 0.002 0.002
+        }
+        physics Physics {
+          mass 1e-08
+        }
+        type "infra-red"
+      }
+      DistanceSensor {
+        translation 0.05 0.072 0.005
+        rotation 0 1 0 1.57
+        children [
+          Solid {
+            rotation 0 1 0 -1.57
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColor 0 0 0
+                }
+                geometry Box {
+                  size 0.002 0.002 0.0005
+                }
+              }
+            ]
+            boundingObject Box {
+              size 0.002 0.002 0.0005
+            }
+            physics Physics {
+              mass 1e-08
+            }
+          }
+        ]
+        name "left_line"
+        boundingObject Box {
+          size 0.0005 0.002 0.002
+        }
+        physics Physics {
+          mass 1e-08
+        }
+        type "infra-red"
+      }
+      DistanceSensor {
+        translation 0.05 0.023 0.005
+        rotation 0 1 0 1.57
+        children [
+          Solid {
+            rotation 0 1 0 -1.57
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColor 0 0 0
+                }
+                geometry Box {
+                  size 0.002 0.002 0.0005
+                }
+              }
+            ]
+            boundingObject Box {
+              size 0.002 0.002 0.0005
+            }
+            physics Physics {
+              mass 1e-08
+            }
+          }
+        ]
+        name "front-right_line"
+        boundingObject Box {
+          size 0.0005 0.002 0.002
+        }
+        physics Physics {
+          mass 1e-08
+        }
+        type "infra-red"
+      }
+      DistanceSensor {
+        translation 0.05 0.037 0.005
+        rotation 0 1 0 1.57
+        children [
+          Solid {
+            rotation 0 1 0 -1.57
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColor 0 0 0
+                }
+                geometry Box {
+                  size 0.002 0.002 0.0005
+                }
+              }
+            ]
+            boundingObject Box {
+              size 0.002 0.002 0.0005
+            }
+            physics Physics {
+              mass 1e-08
+            }
+          }
+        ]
+        name "front-left_line"
+        boundingObject Box {
+          size 0.0005 0.002 0.002
+        }
+        physics Physics {
+          mass 1e-08
+        }
+        type "infra-red"
+      }
+      DistanceSensor {
+        translation 0.05 -0.005 0.006
+        rotation 0 0 1 -1.57
+        children [
+          Solid {
+            rotation 1 0 0 1.57
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColor 0 0 0
+                }
+                geometry Capsule {
+                  height 0.001
+                  radius 0.001
+                }
+              }
+            ]
+            boundingObject Capsule {
+              height 0.001
+              radius 0.001
+              subdivision 16
+            }
+            physics Physics {
+              mass 1e-08
+            }
+          }
+        ]
+        name "right_distance"
+        boundingObject Capsule {
+          height 0.001
+          radius 0.001
+          subdivision 16
+        }
+        physics Physics {
+          mass 8.1e-07
+        }
+        lookupTable [
+          0.04 0 0
+          0.3 1000 0
+        ]
+      }
+      DistanceSensor {
+        translation 0.05 0.065 0.006
+        rotation 0 0 1 1.57
+        children [
+          Solid {
+            rotation 1 0 0 1.57
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColor 0 0 0
+                }
+                geometry Capsule {
+                  height 0.001
+                  radius 0.001
+                }
+              }
+            ]
+            boundingObject Capsule {
+              height 0.001
+              radius 0.001
+              subdivision 16
+            }
+            physics Physics {
+              mass 1e-08
+            }
+          }
+        ]
+        name "left_distance"
+        boundingObject Capsule {
+          height 0.001
+          radius 0.001
+          subdivision 16
+        }
+        physics Physics {
+          mass 8.1e-07
+        }
+        lookupTable [
+          0.04 0 0
+          0.3 1000 0
+        ]
+      }
+      DistanceSensor {
+        translation 0.057 0.03 0.005
+        rotation 1 0 0 -1.57
+        children [
+          Solid {
+            rotation 0 0 1 1.57
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColor 0 0 0
+                }
+                geometry Capsule {
+                  height 0.001
+                  radius 0.001
+                }
+              }
+            ]
+            boundingObject Capsule {
+              height 0.001
+              radius 0.001
+              subdivision 16
+            }
+            physics Physics {
+              mass 1e-08
+            }
+          }
+        ]
+        name "front_distance"
+        boundingObject Capsule {
+          height 0.001
+          radius 0.001
+          subdivision 16
+        }
+        physics Physics {
+          mass 1e-08
+        }
+        lookupTable [
+          0.04 0 0
+          0.3 1000 0
+        ]
+      }
+      DEF Body Transform {
+        rotation 0 1 0 1.57
+        scale 0.001 0.001 0.001
+        children [
+          Shape {
+            appearance PBRAppearance {
+              baseColor 0.1 0 0.1
+              metalness 0
+            }
+            geometry Mesh {
+              url [
+                "../protos/Pololu_no_orugas.obj"
+              ]
+            }
+          }
+        ]
+      }
+      DEF DD HingeJoint {
+        jointParameters HingeJointParameters {
+          position 78.83199994533452
+          axis 0 1 0
+          anchor 0.03 -0.00951997 0.018
+        }
+        device [
+          RotationalMotor {
+            name "motor3"
+          }
+          PositionSensor {
+            name "encoder3"
+          }
+        ]
+        endPoint Solid {
+          translation 0.03 -0.00951997 0.018
+          rotation -0.09894769016518311 0.7039168538576638 -0.7033565365204927 3.339002076300529
+          children [
+            Shape {
+              appearance PBRAppearance {
+              }
+              geometry Cylinder {
+                height 0.019
+                radius 0.018
+              }
+            }
+          ]
+          name "solid(2)"
+          boundingObject Cylinder {
+            height 0.019
+            radius 0.018
+          }
+          physics Physics {
+            mass 1e-05
+          }
+        }
+      }
+      DEF DA HingeJoint {
+        jointParameters HingeJointParameters {
+          position 77.67999979706828
+          axis 0 1 0
+          anchor -0.018 -0.00951997 0.018
+        }
+        device [
+          RotationalMotor {
+            name "motor4"
+          }
+          PositionSensor {
+            name "encoder4"
+          }
+        ]
+        endPoint Solid {
+          translation -0.01799995440222186 -0.00951998 0.017999911000884116
+          rotation -0.3109656766334824 -0.6723167650656031 0.6717815979673776 3.7450172694279265
+          children [
+            Shape {
+              appearance PBRAppearance {
+              }
+              geometry Cylinder {
+                height 0.019
+                radius 0.018
+              }
+            }
+          ]
+          name "solid(3)"
+          boundingObject Cylinder {
+            height 0.019
+            radius 0.018
+          }
+          physics Physics {
+            mass 1e-05
+          }
+        }
+      }
+      DEF IA HingeJoint {
+        jointParameters HingeJointParameters {
+          position 77.67999986796103
+          axis 0 1 0
+          anchor -0.018 0.07 0.018
+        }
+        device [
+          RotationalMotor {
+            name "motor2"
+          }
+          PositionSensor {
+            name "encoder2"
+          }
+        ]
+        endPoint Solid {
+          translation -0.017999954402231805 0.07 0.01799991100087902
+          rotation 0.3109656417497789 -0.6723167756063304 -0.6717816035658131 3.745017218716038
+          children [
+            Shape {
+              appearance PBRAppearance {
+              }
+              geometry Cylinder {
+                height 0.019
+                radius 0.018
+              }
+            }
+          ]
+          name "solid(1)"
+          boundingObject Cylinder {
+            height 0.019
+            radius 0.018
+          }
+          physics Physics {
+            mass 1e-05
+          }
+        }
+      }
+      DEF ID HingeJoint {
+        jointParameters HingeJointParameters {
+          position 78.83199993359855
+          axis 0 1 0
+          anchor 0.03 0.07 0.018
+        }
+        device [
+          RotationalMotor {
+            name "motor1"
+          }
+          PositionSensor {
+            name "encoder1"
+          }
+        ]
+        endPoint Solid {
+          translation 0.03 0.07 0.018
+          rotation 0.09894768912142005 0.7039168604872466 0.7033565300324645 3.3390020831315157
+          children [
+            Shape {
+              appearance PBRAppearance {
+              }
+              geometry Cylinder {
+                height 0.019
+                radius 0.018
+              }
+            }
+          ]
+          boundingObject Cylinder {
+            height 0.019
+            radius 0.018
+          }
+          physics Physics {
+            mass 1e-05
+          }
+        }
+      }
+    ]
+    name IS name
+    boundingObject USE Body
+    physics Physics {
+      mass 0.03
+    }
+    controller "zumito_controller"
+  }
+}

@@ -1,0 +1,63 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "../protos/Pololu_new.proto"
+
+WorldInfo {
+  basicTimeStep 3
+}
+Viewpoint {
+  orientation -0.45644499568550895 0.49141398527538394 0.7417346297628421 1.7938741492901362
+  position -0.2355870646433128 -2.172678661831524 4.557236832773705
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 3 3
+  floorAppearance Appearance {
+    texture ImageTexture {
+      url [
+        "../libraries/circuito2.png"
+      ]
+      repeatS FALSE
+      repeatT FALSE
+    }
+    textureTransform TextureTransform {
+      center 0.3 0.3
+      scale 0.24 0.24
+    }
+  }
+}
+DEF Pololu Pololu_new {
+  translation -0.438883 -0.168339 0.0172884
+  rotation -0.00034103091435311756 -0.0006212728439728483 0.9999997488589529 2.61806
+  controller "line_follower"
+}
+DEF Pololu Pololu_new {
+  translation -0.17455 0.287381 0.0148893
+  rotation -0.0006649168441869707 0.00016295596181377825 0.999999765665445 3.14156
+  name "pololu2"
+  controller "line_follower"
+}
+DEF Pololu Pololu_new {
+  translation 0.351045 0.018855 0.0150864
+  rotation -3.5653499977338745e-05 -1.485379999055897e-07 0.9999999993644031 3.14156
+  name "pololu3"
+  controller "line_follower"
+}
+DEF Pololu Pololu_new {
+  translation 0.131045 0.63888 0.0150427
+  rotation -3.5653499977338745e-05 -1.485379999055897e-07 0.9999999993644031 3.14156
+  name "pololu4"
+  controller "line_follower"
+}
+DEF Pololu Pololu_new {
+  translation 1.21104 0.128835 0.0150543
+  rotation -3.5653499977338745e-05 -1.485379999055897e-07 0.9999999993644031 3.14156
+  name "pololu5"
+  controller "line_follower"
+}
